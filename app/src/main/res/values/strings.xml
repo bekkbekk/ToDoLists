@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">To-Do Lists</string>
+    <string name="addText">Add To-Do</string>
+    <string name="delete">Deletes To Do\'s</string>
+</resources>
