@@ -3,10 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Jerwin/Documents/Android Studio/ToDoLists/app/src/main/res/drawable/add_button.xml" value="0.2755208333333333" />
         <entry key="..\:/Jerwin/Documents/Android Studio/ToDoLists/app/src/main/res/drawable/btn_background.xml" value="0.2755208333333333" />
+        <entry key="..\:/Jerwin/Documents/Android Studio/ToDoLists/app/src/main/res/drawable/detele_button.xml" value="0.2755208333333333" />
         <entry key="..\:/Jerwin/Documents/Android Studio/ToDoLists/app/src/main/res/drawable/is_checked_bg.xml" value="0.2755208333333333" />
+        <entry key="..\:/Jerwin/Documents/Android Studio/ToDoLists/app/src/main/res/drawable/title_background.xml" value="0.2755208333333333" />
+        <entry key="..\:/Jerwin/Documents/Android Studio/ToDoLists/app/src/main/res/drawable/x_button_checked.xml" value="0.2755208333333333" />
+        <entry key="..\:/Jerwin/Documents/Android Studio/ToDoLists/app/src/main/res/drawable/x_button_not_checked.xml" value="0.2755208333333333" />
         <entry key="..\:/Jerwin/Documents/Android Studio/ToDoLists/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Jerwin/Documents/Android Studio/ToDoLists/app/src/main/res/layout/item_todo.xml" value="0.264" />
+        <entry key="..\:/Jerwin/Documents/Android Studio/ToDoLists/app/src/main/res/layout/item_todo.xml" value="0.2" />
       </map>
     </option>
   </component>
