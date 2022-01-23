@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
 
         val linearLayoutManager = LinearLayoutManager(this)
         rvToDo.layoutManager = linearLayoutManager
+
         //pag open ay yung latest ang nasa pinakababa
         rvToDo.smoothScrollToPosition(newList.size - 1)
 

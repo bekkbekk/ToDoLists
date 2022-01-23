@@ -45,8 +45,10 @@ class ToDoAdapter(
         //when checkbox is clicked
         holder.cbDone.setOnClickListener {
             if (holder.cbDone.isChecked) {
+                toDos[position].isChecked = true //kung nakacheck ang checkbox edi dapat true na rin sa list
                 holder.view_back.setBackgroundResource(R.drawable.is_checked_bg);
             } else {
+                toDos[position].isChecked = false
                 holder.view_back.setBackgroundResource(R.drawable.btn_background);
             }
         }
