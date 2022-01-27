@@ -1,5 +1,7 @@
 package com.example.todolists
 
+import DataBaseHandler
+import android.content.Context
 import android.graphics.Color
 import android.text.Layout
 import android.view.LayoutInflater
@@ -13,7 +15,8 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 
 class ToDoAdapter(
-    private val toDos: MutableList<ToDo>
+    val context: Context,
+    private var toDos: MutableList<ToDo>
 ) : RecyclerView.Adapter<ToDoAdapter.ToDoViewHolder>() {
 
     inner class ToDoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -51,12 +54,25 @@ class ToDoAdapter(
                 toDos[position].isChecked = false
                 holder.view_back.setBackgroundResource(R.drawable.btn_background);
             }
+
+            //update data in database
+            if(context is MainActivity){
+                context.updateRecord(toDos[position])
+            }
         }
 
         //when 'x' button is clicked
         holder.btnDelete.setOnClickListener {
+
+            //kelangan muna icheck kung yung context ba ay MainActivity kasi kung hindi edi hindi natin babaguhin
+            if (context is MainActivity){
+                context.deleteRecord(toDos[position])
+            }
+
             toDos.removeAt(position)
+
             notifyDataSetChanged()
+
         }
 
 
